@@ -39,3 +39,8 @@ plt.show()
 
 argentina_gdp = [[13588.84]]
 print(linear_regression_model.predict(argentina_gdp))
+
+
+#Creditos Professor Mauricio Jeiji PUCRS
+#https://www.linkedin.com/in/mauricioseiji/
+#Codigo alterado para fins de estudo
