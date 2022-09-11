@@ -1,8 +1,10 @@
+#importing Libraries
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import sklearn.linear_model
 
+#Reading CSV files. They are in the same folder as the source code (hello.py)
 money_data_frame = pd.read_csv("money.csv") 
 money_data_frame.head()
 
@@ -20,8 +22,8 @@ money_happiness_df.head(10)
 money_happiness_df['GDP'] = money_happiness_df['GDP'].apply(float)
 
 money_happiness_df.plot(kind='scatter', x='GDP', y='Happiness',color='blue')
-#
-# plt.show()
+
+plt.show()
 
 X = np.array(money_happiness_df['GDP']).reshape(-1,1)
 y = money_happiness_df['Happiness']
